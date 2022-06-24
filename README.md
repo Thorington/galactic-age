@@ -28,8 +28,8 @@ This application takes a person's inputted age and life expectancy in Earth year
 
 * Clone this repository to your desktop
 * Navigate to the top level of the directory
-* To view business logic, navigate to the src folder and open the lifestats.js file
-* To view tests for business logic, navigate to the __tests__ folder and open the lifestats.test.js file
+* To view business logic, navigate to the __"src"__ folder and open the lifestats.js file
+* To view tests for business logic, navigate to the __"__tests__"__ folder and open the lifestats.test.js file
 
 ## Known Bugs
 
