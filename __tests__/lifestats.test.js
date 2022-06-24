@@ -9,13 +9,13 @@ describe('LifeStats', () => {
   })
 
   test('should correctly determine remaining Earth years from inputted Earth age and life expectancy', () => {
-    const remainingEarthYears = new LifeStats(25, 75);
-    expect(remainingEarthYears.lastOnEarth()).toEqual(50);
+    const earthYears = new LifeStats(25, 75);
+    expect(earthYears.lastOnEarth()).toEqual(50);
   })
 
   test('should correctly determine remaining Mercury years from inputted Earth age and life expectancy', () => {
-    const remainingMercuryYears = new LifeStats(25, 75);
-    expect(remainingEarthYears.lastOnMercury()).toEqual(50);
+    const earthYears = new LifeStats(25, 75);
+    expect(earthYears.lastOnMercury()).toEqual(12);
   })
 
 })
