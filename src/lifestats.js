@@ -4,6 +4,7 @@ export default class LifeStats {
     this.age = age;
     this.lifespan = lifespan;
   }
+
   //EARTH
 
   lastOnEarth() {
@@ -15,6 +16,7 @@ export default class LifeStats {
       return (earthResult);
     }
   }
+
   //MERCURY
 
   lastOnMercury() {

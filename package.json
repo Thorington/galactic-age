@@ -9,11 +9,12 @@
     "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js"
   },
-"jest": {
+  "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageReporters": [
+      "html"
+    ]
   },
-    
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -31,10 +32,10 @@
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "3.8.0"
   },
-  "dependencies": { 
+  "dependencies": {
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
+    "mathjs": "^10.6.3",
     "popper.js": "^1.16.1"
   }
 }
-

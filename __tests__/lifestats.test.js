@@ -8,7 +8,7 @@ describe('LifeStats', () => {
     expect(statsOnEarth.lifespan).toEqual(75);
   })
 
-//EARTH
+  //EARTH
 
   test('should correctly determine remaining Earth years from inputted Earth age and life expectancy', () => {
     const earthYears = new LifeStats(25, 75);
@@ -20,7 +20,7 @@ describe('LifeStats', () => {
     expect(earthYears.lastOnEarth()).toEqual("You are 85.0 years old on Earth. You've lived 10.0 Earth years past your life expectancy!");
   })
 
-//MERCURY
+  //MERCURY
 
   test('should correctly determine remaining Mercury years from inputted Earth age and life expectancy', () => {
     const earthYears = new LifeStats(25, 75);
@@ -44,29 +44,29 @@ describe('LifeStats', () => {
     expect(earthYears.lastOnVenus()).toEqual("You are 52.7 years old on Venus. You've lived 6.2 Venus years past your life expectancy!");
   })
 
-//MARS
+  //MARS
 
-test('should correctly determine remaining Mars years from inputted Earth age and life expectancy', () => {
-  const earthYears = new LifeStats(25, 75);
-  expect(earthYears.lastOnMars()).toEqual("You are 47.0 years old on Mars. You have approximately 94.0 Mars years left, if all goes well!");
-})
+  test('should correctly determine remaining Mars years from inputted Earth age and life expectancy', () => {
+    const earthYears = new LifeStats(25, 75);
+    expect(earthYears.lastOnMars()).toEqual("You are 47.0 years old on Mars. You have approximately 94.0 Mars years left, if all goes well!");
+  })
 
-test('should correctly determine remaining Mars years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
-  const earthYears = new LifeStats(85, 75);
-  expect(earthYears.lastOnMars()).toEqual("You are 159.8 years old on Mars. You've lived 18.8 Mars years past your life expectancy!");
-})
+  test('should correctly determine remaining Mars years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
+    const earthYears = new LifeStats(85, 75);
+    expect(earthYears.lastOnMars()).toEqual("You are 159.8 years old on Mars. You've lived 18.8 Mars years past your life expectancy!");
+  })
 
-//JUPITER
+  //JUPITER
 
-test('should correctly determine remaining Jupiter years from inputted Earth age and life expectancy', () => {
-  const earthYears = new LifeStats(25, 75);
-  expect(earthYears.lastOnJupiter()).toEqual("You are 315.3 years old on Jupiter. You have approximately 574.2 Jupiter years left, if all goes well!");
-})
+  test('should correctly determine remaining Jupiter years from inputted Earth age and life expectancy', () => {
+    const earthYears = new LifeStats(25, 75);
+    expect(earthYears.lastOnJupiter()).toEqual("You are 296.5 years old on Jupiter. You have approximately 593.0 Jupiter years left, if all goes well!");
+  })
 
-test('should correctly determine remaining Jupiter years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
-  const earthYears = new LifeStats(85, 75);
-  expect(earthYears.lastOnJupiter()).toEqual("You are 1008.1 years old on Jupiter. You've lived 118.6 Jupiter years past your life expectancy!");
-})
+  test('should correctly determine remaining Jupiter years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
+    const earthYears = new LifeStats(85, 75);
+    expect(earthYears.lastOnJupiter()).toEqual("You are 1008.1 years old on Jupiter. You've lived 118.6 Jupiter years past your life expectancy!");
+  })
 
 })
 
