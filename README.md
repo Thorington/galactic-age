@@ -1,5 +1,5 @@
 # _Independent Project #5: Super Galactic Age Calculator_
-![a picture of the moon](img/skyheader.JPG)
+![a picture of the moon](img/sky.JPG)
 
 #### Contributors: _**Claire Thorington**_
 
