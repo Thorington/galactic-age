@@ -8,10 +8,10 @@ export default class LifeStats {
 
   lastOnEarth() {
     if (this.age > this.lifespan) {
-      let earthResult = `You are ${this.age} years old on Earth. You've lived ${this.age - this.lifespan} Earth years past your life expectancy!`;
+      let earthResult = `You are ${(this.age).toFixed(1)} years old on Earth. You've lived ${(this.age - this.lifespan).toFixed(1)} Earth years past your life expectancy!`;
       return (earthResult);
     } else {
-      let earthResult = `You are ${this.age} years old on Earth. You have approximately ${this.lifespan - this.age} Earth years left, if all goes well!`;
+      let earthResult = `You are ${(this.age).toFixed(1)} years old on Earth. You have approximately ${(this.lifespan - this.age).toFixed(1)} Earth years left, if all goes well!`;
       return (earthResult);
     }
   }
@@ -19,10 +19,10 @@ export default class LifeStats {
 
   lastOnMercury() {
     if (this.age > this.lifespan) {
-      let mercuryResult = `You are ${(this.age * 0.24)} years old on Mercury. You've lived ${((this.age * 0.24) - (this.lifespan * 0.24)).toFixed(1)} Mercury years past your life expectancy!`;
+      let mercuryResult = `You are ${(this.age * 0.24).toFixed(1)} years old on Mercury. You've lived ${((this.age * 0.24) - (this.lifespan * 0.24)).toFixed(1)} Mercury years past your life expectancy!`;
       return (mercuryResult);
     } else {
-      let mercuryResult = `You are ${(this.age * 0.24)} years old on Mercury. You have approximately ${((this.lifespan * 0.24) - (this.age * 0.24))} Mercury years left, if all goes well!`;
+      let mercuryResult = `You are ${(this.age * 0.24).toFixed(1)} years old on Mercury. You have approximately ${((this.lifespan * 0.24) - (this.age * 0.24)).toFixed(1)} Mercury years left, if all goes well!`;
       return (mercuryResult);
     }
   }
@@ -31,10 +31,10 @@ export default class LifeStats {
 
   lastOnVenus() {
     if (this.age > this.lifespan) {
-      let venusResult = `You are ${(this.age * 0.62)} years old on Venus. You've lived ${((this.age * 0.62) - (this.lifespan * 0.62)).toFixed(1)} Venus years past your life expectancy!`;
+      let venusResult = `You are ${(this.age * 0.62).toFixed(1)} years old on Venus. You've lived ${((this.age * 0.62) - (this.lifespan * 0.62)).toFixed(1)} Venus years past your life expectancy!`;
       return (venusResult);
     } else {
-      let venusResult = `You are ${(this.age * 0.62)} years old on Venus. You have approximately ${((this.lifespan * 0.62) - (this.age * 0.62))} Venus years left, if all goes well!`;
+      let venusResult = `You are ${(this.age * 0.62).toFixed(1)} years old on Venus. You have approximately ${((this.lifespan * 0.62) - (this.age * 0.62)).toFixed(1)} Venus years left, if all goes well!`;
       return (venusResult);
     }
   }
@@ -42,8 +42,13 @@ export default class LifeStats {
   //MARS
 
   lastOnMars() {
-    const result = ((this.lifespan - this.age) * 1.88);
-    return (result);
+    if (this.age > this.lifespan) {
+      let marsResult = `You are ${(this.age * 1.88).toFixed(1)} years old on Mars. You've lived ${((this.age * 1.88) - (this.lifespan * 1.88)).toFixed(1)} Mars years past your life expectancy!`;
+      return (marsResult);
+    } else {
+      let marsResult = `You are ${(this.age * 1.88).toFixed(1)} years old on Mars. You have approximately ${((this.lifespan * 1.88) - (this.age * 1.88)).toFixed(1)} Mars years left, if all goes well!`;
+      return (marsResult);
+    }
   }
 
   //JUPITER
