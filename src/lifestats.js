@@ -16,22 +16,18 @@ export default class LifeStats {
     
 
   lastOnMercury() {
-    const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*0.24);
     return (result);
   }
   lastOnVenus() {
-    const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*0.62);
     return (result);
   }
   lastOnMars() {
-    const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*1.88);
     return (result);
   }
   lastOnJupiter() {
-    const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*11.86);
     return (result);
   }
