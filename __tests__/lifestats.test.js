@@ -13,14 +13,19 @@ describe('LifeStats', () => {
     expect(earthYears.lastOnEarth()).toEqual("You are 25 years old on Earth. You have approximately 50 Earth years left, if all goes well!");
   })
 
-  test('should correctly determine remaining Earth years from inputted Earth age and life expectancy', () => {
+  test('should correctly determine remaining Earth years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
     const earthYears = new LifeStats(85, 75);
     expect(earthYears.lastOnEarth()).toEqual("You are 85 years old on Earth. You've lived 10 Earth years past your life expectancy!");
   })
 
   test('should correctly determine remaining Mercury years from inputted Earth age and life expectancy', () => {
     const earthYears = new LifeStats(25, 75);
-    expect(earthYears.lastOnMercury()).toEqual(12);
+    expect(earthYears.lastOnMercury()).toEqual("You are 6 years old on Mercury. You have approximately 12 Earth years left, if all goes well!");
+  })
+
+  test('should correctly determine remaining Mercury years from inputted Earth age and life expectancy, if inputted age is older than life expectancy', () => {
+    const earthYears = new LifeStats(85, 75);
+    expect(earthYears.lastOnMercury()).toEqual("You are 20.4 years old on Mercury. You've lived 2.4 Mercury years past your life expectancy!");
   })
 
   test('should correctly determine remaining Venus years from inputted Earth age and life expectancy', () => {
