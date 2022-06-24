@@ -22,4 +22,9 @@ describe('Age', () => {
     expect(earthAge.marsify()).toEqual(47);
   })
 
+  test('should correctly determine age in Jupiter years given age in Earth years', () => {
+    const earthAge = new Age(25);
+    expect(earthAge.jupiterify()).toEqual(296.5);
+  })
+
 })
