@@ -10,5 +10,11 @@ export default class Age {
   return (result);
   }
 
+  venusify() {
+    const earthAge = new Age();
+    const result = (this.age*.62);
+    return (result);
+    }
+
 }
   
