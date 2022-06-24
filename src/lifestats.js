@@ -24,6 +24,11 @@ export default class LifeStats {
     const result = ((this.lifespan-this.age)*1.88);
     return (result);
   }
+  lastOnJupiter() {
+    const onEarth = new LifeStats();
+    const result = ((this.lifespan-this.age)*11.86);
+    return (result);
+  }
 }
 
 
