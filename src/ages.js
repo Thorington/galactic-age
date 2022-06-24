@@ -5,16 +5,22 @@ export default class Age {
   }
 
   mercurify() {
-  const earthAge = new Age();
-  const result = (this.age*.24);
-  return (result);
+    const earthAge = new Age();
+    const result = (this.age * .24);
+    return (result);
   }
 
   venusify() {
     const earthAge = new Age();
-    const result = (this.age*.62);
+    const result = (this.age * .62);
     return (result);
-    }
+  }
+
+  marsify() {
+    const earthAge = new Age();
+    const result = (this.age * 1.88);
+    return (result);
+  }
 
 }
-  
+
