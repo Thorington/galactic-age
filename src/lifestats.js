@@ -10,8 +10,13 @@ export default class LifeStats {
     return (result);
   }
   lastOnMercury() {
-    const onMercury = new LifeStats();
+    const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*0.24);
+    return (result);
+  }
+  lastOnVenus() {
+    const onEarth = new LifeStats();
+    const result = ((this.lifespan-this.age)*0.62);
     return (result);
   }
 }
