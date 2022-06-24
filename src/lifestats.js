@@ -6,10 +6,10 @@ export default class LifeStats {
   }
   lastOnEarth() {
       if (this.age > this.lifespan) {
-        let yearsPast = `You've lived ${this.age-this.lifespan} years past your life expectancy in Earth years!`;
+        let yearsPast = `You are ${this.age} years old on Earth. You've lived ${this.age-this.lifespan} Earth years past your life expectancy!`;
         return (yearsPast);
       } else {
-        let yearsLeft = `You have approximately ${this.lifespan-this.age} years left, if all goes well!`;
+        let yearsLeft = `You are ${this.age} years old on Earth. You have approximately ${this.lifespan-this.age} Earth years left, if all goes well!`;
       return (yearsLeft);
       }
       }
