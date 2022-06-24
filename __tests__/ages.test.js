@@ -9,7 +9,7 @@ describe('Age', () => {
 
   test('should correctly determine age in Mercury years given age in Earth years', () => {
     const earthAge = new Age(25);
-    expect(earthAge.Mercurify).toEqual(25);
+    expect(earthAge.mercurify()).toEqual(6);
   })
 
 });
