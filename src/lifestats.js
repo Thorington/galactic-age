@@ -19,6 +19,11 @@ export default class LifeStats {
     const result = ((this.lifespan-this.age)*0.62);
     return (result);
   }
+  lastOnMars() {
+    const onEarth = new LifeStats();
+    const result = ((this.lifespan-this.age)*1.88);
+    return (result);
+  }
 }
 
 
