@@ -22,5 +22,11 @@ export default class Age {
     return (result);
   }
 
+  jupiterify() {
+    const earthAge = new Age();
+    const result = (this.age * 11.86);
+    return (result);
+  }
+
 }
 
