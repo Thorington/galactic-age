@@ -25,7 +25,12 @@ describe('LifeStats', () => {
 
   test('should correctly determine remaining Mars years from inputted Earth age and life expectancy', () => {
     const earthYears = new LifeStats(25, 75);
-    expect(earthYears.lastOnMars()).toEqual(31);
+    expect(earthYears.lastOnMars()).toEqual(94);
+  })
+
+  test('should correctly determine remaining Jupiter years from inputted Earth age and life expectancy', () => {
+    const earthYears = new LifeStats(25, 75);
+    expect(earthYears.lastOnJupiter()).toEqual(593);
   })
 
 })
