@@ -10,7 +10,12 @@ describe('LifeStats', () => {
 
   test('should correctly determine remaining Earth years from inputted Earth age and life expectancy', () => {
     const earthYears = new LifeStats(25, 75);
-    expect(earthYears.lastOnEarth()).toEqual(50);
+    expect(earthYears.lastOnEarth()).toEqual("You have approximately 50 years left, if all goes well!");
+  })
+
+  test('should correctly determine remaining Earth years from inputted Earth age and life expectancy', () => {
+    const earthYears = new LifeStats(85, 75);
+    expect(earthYears.lastOnEarth()).toEqual("You've lived 10 years past your life expectancy in Earth years!");
   })
 
   test('should correctly determine remaining Mercury years from inputted Earth age and life expectancy', () => {
