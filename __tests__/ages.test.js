@@ -12,4 +12,9 @@ describe('Age', () => {
     expect(earthAge.mercurify()).toEqual(6);
   })
 
-});
+  test('should correctly determine age in Venus years given age in Earth years', () => {
+    const earthAge = new Age(25);
+    expect(earthAge.venusify()).toEqual(15.5);
+  })
+
+})
