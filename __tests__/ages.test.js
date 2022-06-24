@@ -17,4 +17,9 @@ describe('Age', () => {
     expect(earthAge.venusify()).toEqual(15.5);
   })
 
+  test('should correctly determine age in Mars years given age in Earth years', () => {
+    const earthAge = new Age(25);
+    expect(earthAge.marsify()).toEqual(47);
+  })
+
 })
