@@ -54,9 +54,12 @@ export default class LifeStats {
   //JUPITER
 
   lastOnJupiter() {
-    const result = ((this.lifespan - this.age) * 11.86);
-    return (result);
+    if (this.age > this.lifespan) {
+      let jupiterResult = `You are ${(this.age * 11.86).toFixed(1)} years old on Jupiter. You've lived ${((this.age * 11.86) - (this.lifespan * 11.86)).toFixed(1)} Jupiter years past your life expectancy!`;
+      return (jupiterResult);
+    } else {
+      let jupiterResult = `You are ${(this.age * 11.86).toFixed(1)} years old on Jupiter. You have approximately ${((this.lifespan * 11.86) - (this.age * 11.86)).toFixed(1)} Jupiter years left, if all goes well!`;
+      return (jupiterResult);
+    }
   }
 }
-
-
