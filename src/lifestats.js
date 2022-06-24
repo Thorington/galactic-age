@@ -5,10 +5,16 @@ export default class LifeStats {
     this.lifespan = lifespan;
   }
   lastOnEarth() {
-    const onEarth = new LifeStats();
-    const result = ((this.lifespan) - (this.age));
-    return (result);
-  }
+      if (this.age > this.lifespan) {
+        let yearsPast = `You've lived ${this.age-this.lifespan} years past your life expectancy in Earth years!`;
+        return (yearsPast);
+      } else {
+        let yearsLeft = `You have approximately ${this.lifespan-this.age} years left, if all goes well!`;
+      return (yearsLeft);
+      }
+      }
+    
+
   lastOnMercury() {
     const onEarth = new LifeStats();
     const result = ((this.lifespan-this.age)*0.24);
