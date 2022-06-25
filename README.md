@@ -14,7 +14,7 @@
 
 ## Description
 
-This application takes a person's inputted age and life expectancy in Earth years and create a class that does the following:
+This application takes a person's inputted age and life expectancy in Earth years and creates a class that does the following:
 
 * Returns their age in Mercury years
 * Returns their age in Venus years
