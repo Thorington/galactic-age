@@ -11,6 +11,9 @@
 * Markdown
 * JavaScript
 * jQuery
+* Webpack
+* Jest
+* For a full list of dependencies, see __package.json__
 
 ## Description
 
@@ -25,10 +28,12 @@ This application takes a person's inputted age and life expectancy in Earth year
 
 ## Setup/Installation Requirements
 
-* Clone this repository to your desktop
-* Navigate to the top level of the directory
-* To view business logic, navigate to the __src__ folder and open the lifestats.js file
-* To view tests for business logic, navigate to the __tests__ folder and open the lifestats.test.js file
+* Clone repository to desktop
+* Open files in text editor
+* Navigate to top level of directory
+* To install packages, run $ npm install
+* To build program, run $ npm run build
+* To test, run $ npm test
 
 ## Known Bugs
 
